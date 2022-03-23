@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" sizes="64x64" href="./favicon.png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!-- <li class="nav__item"><a href="#" class="nav__link">Form</a></li> -->
+                    <li class="nav__item">
+                        <a href="../admin.php" class="nav__link">Admin</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <form action="" class="form" id="form">
+                <label class="form__label">
+                    Name:
+                    <input
+                        type="text"
+                        class="form__input"
+                        name="name"
+                        placeholder="Joanne"
+                    />
+                </label>
+                <label class="form__label">
+                    Last Name:
+                    <input
+                        type="text"
+                        class="form__input"
+                        name="lastName"
+                        placeholder="Rowling"
+                    />
+                </label>
+                <label class="form__label">
+                    E-mail:
+                    <input
+                        type="email"
+                        class="form__input"
+                        name="email"
+                        placeholder="harry.potter@gmail.com"
+                    />
+                </label>
+                <label class="form__label">
+                    Phone Number:
+                    <input
+                        type="tel"
+                        class="form__input"
+                        name="phone"
+                        placeholder="+7-999-123-45-67"
+                    />
+                </label>
+                <label class="form__label">
+                    Topic of the Conference:
+                    <select class="form__select" name="topic">
+                        <option value="business">Business</option>
+                        <option value="technology">Technology</option>
+                        <option value="advertising-and-marketing">
+                            Advertising and Marketing
+                        </option>
+                    </select>
+                </label>
+                <label class="form__label">
+                    Payment Method:
+                    <select class="form__select" name="paymentMethod">
+                        <option value="WebMoney">WebMoney</option>
+                        <option value="Yandex-money">Yandex money</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="credit-card">Credit card</option>
+                    </select>
+                </label>
+                <label class="form__label">
+                    Receive newsletter?
+                    <input
+                        style="display: none"
+                        type="text"
+                        name="newsletter"
+                    />
+                    <input
+                        type="checkbox"
+                        name="newsletter"
+                        class="form__check"
+                    />
+                </label>
+                <button class="form__submit" type="submit">Submit</button>
+
+                <div class="form__msg"></div>
+            </form>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
